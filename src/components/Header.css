@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,900;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #ffffff;
+    background: url(../assets/images/header_fundo_mandala.png), linear-gradient(225deg, rgba(36, 26, 60, 1) 50%, rgba(64, 23, 90, 1) 100%);
+    /* background: radial-gradient(ellipse at top, rgba(36, 26, 60, 1) 75%, transparent),
+                radial-gradient(ellipse at bottom, rgba(64, 23, 90, 1), transparent); */
+    background-size: cover, 200% 200%;
+    animation: Header__animation 15s ease infinite;
+}
+
+@keyframes Header__animation {
+    0% {
+        background-position: 0, 0% 100%;
+    }
+
+    50% {
+        background-position: 0, 100% 0%;
+    }
+
+    100% {
+        background-position: 0, 0% 100%;
+    }
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: 200;
+    letter-spacing: 20px;
+    color: #a471b1;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.header__chamada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header__chamada-botao {
+    margin-top: 160px;
+}
+
+.header__chamada-botao a:link,
+.header__chamada-botao a:visited {
+    font-size: 18px;
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px 100px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-weight: 300;
+    transition: all 0.5s;
+    text-transform: uppercase;
+    background: linear-gradient(-45deg, rgba(255, 255, 255, 0), rgba(138, 198, 255, 0.1), rgba(255, 255, 255, 0));
+    background-size: 400% 400%;
+    animation: parceiro__animacao 5s ease infinite;
+}
+
+.header__chamada-botao a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+@keyframes parceiro__animacao {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.header__video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    margin-top: 80px;
+
+    /* VOU CONSEGUIR */
+    /* VOU CONSEGUIR */
+    /* VOU CONSEGUIR */
+    display: none;
+    /* VOU CONSEGUIR */
+    /* VOU CONSEGUIR */
+    /* VOU CONSEGUIR */
+}
+
+.header__video-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 10px 10px 62px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header__comofunciona {
+    text-align: right;
+}
+
+.header__comofunciona h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #a471b1;
+    margin-right: 20px;
+}
+
+.header__comofunciona-box {
+    position: relative;
+    padding: 20px 30px;
+    margin: 5px;
+    /* display: inline-block; */
+    /* font-size: 20px; */
+}
+
+.header__comofunciona-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 10px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 30%, #836194);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.header__comofunciona-timeline {
+    font-family: 'Montserrat', sans-serif;
+    border-right: 5px solid #251733;
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-right: 40px;
+}
+
+.header__comofunciona-timeline_content span {
+    font-size: 14px;
+    color: #a471b0;
+    font-style: italic;
+}
+
+.header__comofunciona-timeline_content-linha {
+    position: relative;
+    margin-top: 20px;
+    border-bottom: 8px solid #251733;
+}
+
+.header__comofunciona-timeline_content-botao {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header__comofunciona-timeline_content-botao a:link,
+.header__comofunciona-timeline_content-botao a:visited {
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    background-color: #251733;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header__comofunciona-timeline_content-botao a:hover {
+    border-bottom: 2px solid #150921;
+}
+
+.header__comofunciona-timeline_box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.header__comofunciona-timeline_dot {
+    position: absolute;
+    top: 50%;
+    right: -66px;
+    transform: translate(0%, -50%);
+    padding: 10px 20px 10px 20px;
+    border-radius: 50%;
+    background-color: #251733;
+}
+
+/* MOBILE */
+/* MOBILE */
+/* MOBILE */
+@media (max-width: 1199px) {
+    .Header {
+        padding-top: 100px;
+    }
+
+    .Header h1 {
+        font-size: 23px;
+    }
+
+    .Header h2 {
+        font-size: 15px;
+    }
+
+    .header__chamada-botao a:link {
+        font-size: 12px;
+        padding: 30px 70px;
+    }
+
+    .header__comofunciona-timeline_content-botao a:link {
+        font-size: 7px;
+    }
+
+    .header__comofunciona {
+        margin-top: 200px;
+        margin-bottom: 100px;
+    }
+}

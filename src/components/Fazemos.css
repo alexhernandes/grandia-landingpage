@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,900;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+.Fazemos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #fcf1ff;
+    /* background: radial-gradient(ellipse at top, rgba(36, 26, 60, 1) 75%, transparent),
+                radial-gradient(ellipse at bottom, rgba(64, 23, 90, 1), transparent); */
+    background-size: cover, 200% 200%;
+    animation: fazemos__animation 15s ease infinite;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+    letter-spacing: 20px;
+    color: #e4caeb;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.fazemos__chamada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+}
+
+.fazemos__comofunciona {
+    text-align: left;
+    height: 100%;
+}
+
+.fazemos__comofunciona h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #a471b1;
+    margin-right: 20px;
+}
+
+.fazemos__comofunciona-box {
+    position: relative;
+    padding: 50px 30px;
+    margin: 5px;
+    height: 100%;
+    /* display: inline-block; */
+    /* font-size: 20px; */
+}
+
+.fazemos__comofunciona-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 10px;
+    background: linear-gradient(-120deg, rgba(0, 0, 0, 0) 50%, #836194);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.fazemos__comofunciona-boxInvert {
+    position: relative;
+    padding: 50px 30px 10px 30px;
+    margin: 5px;
+    height: 100%;
+    /* display: inline-block; */
+    /* font-size: 20px; */
+}
+
+.fazemos__comofunciona-boxInvert::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 10px;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0) 50%, #836194);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.fazemos__comofunciona-item {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.fazemos__comofunciona-item_titulo {
+    color: #a471b0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.fazemos__comofunciona-item_titulo span {
+    margin-right: 10px;
+}
+
+.fazemos__comofunciona-item_content {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.fazemos__comofunciona-item_content-botao {
+    display: block;
+    margin: 25px 10px 0px 10px;
+    border: 1px solid #a471b1;
+    padding: 20px 0;
+    text-align: center;
+    color: #a471b1;
+    background-color: #fcf1ff;
+    text-decoration: none;
+    background: linear-gradient(-45deg, rgba(255, 255, 255, 0), rgb(246, 221, 253, 0.5), rgba(255, 255, 255, 0));
+    background-size: 400% 400%;
+    animation: parceiro__animacao 3s ease infinite;
+}
+
+.fazemos__comofunciona-item_content-botao:hover {
+    color: #874b96;
+    border: 1px solid #874b96 ;
+    background: linear-gradient(-45deg, rgba(255, 255, 255, 0), rgb(246, 221, 253, 1), rgba(255, 255, 255, 0));
+    background-size: 400% 400%;
+    animation: parceiro__animacao 3s ease infinite;
+}
